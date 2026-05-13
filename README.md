@@ -1,28 +1,40 @@
 # 🤖 Claude Auto-Resume (Claude_AutoBot)
 
 > **사용 한도가 초과된 Claude 데스크톱 앱을 초기화 시간에 맞춰 자동으로 재개하고, 작업 완료 후 PC를 종료해주는 스마트 자동화 툴입니다.**
-
-본 프로그램은 사용자가 부재 중일 때도 Claude의 사용 한도 리셋 시점을 감지하여 '다시 시도' 버튼을 클릭하고, 이후 예약된 시간에 맞춰 안전하게 PC를 종료함으로써 업무 효율성을 극대화합니다.
+> *A smart automation tool that automatically resumes Claude and safely shuts down your PC.*
 
 ---
 
-## 🌟 주요 기능
-- **자동 버튼 감지:** 이미지 매칭 기술을 통해 '계속 작업하기' 또는 '다시 시도' 버튼을 실시간으로 감지합니다.
-- **스마트 화면 깨우기:** 모니터가 꺼진 상태에서도 마우스 이동 및 키보드 입력을 통해 화면을 깨우고 작업을 수행합니다.
-- **듀얼 모니터 지원:** 주 모니터와 보조 모니터 어느 곳에 창이 있더라도 정확하게 버튼을 찾아냅니다.
-- **예약 종료 시스템:** 모든 작업이 완료된 후 설정된 시간에 맞춰 PC를 자동으로 종료하여 에너지를 절약합니다.
+## 📜 프로그램 탄생 배경 (Background)
+
+이 프로그램은 실생활의 불편함을 AI와 함께 해결해 나가는 과정에서 탄생했습니다. 초기 아이디어부터 최종 완성까지 겪었던 기술적 난관과 해결 과정을 기록합니다.
+
+1. **기술적 전환:** 설치가 복잡한 OCR(Tesseract) 대신 **이미지 매칭(OpenCV)** 방식을 채택하여 정확도와 사용자 편의성을 높였습니다.
+2. **하드웨어의 한계:** 모니터가 절전 모드에서 깨어나는 **'예열 시간'**을 고려하여, 하드웨어와 소프트웨어의 속도를 맞추는 지연 로직을 구현했습니다.
+3. **멀티 모니터 대응:** 주 모니터뿐만 아니라 **보조 모니터**의 좌표계까지 계산하여 클로드 창이 어디에 있든 정확히 클릭하도록 설계했습니다.
+4. **AI-Human Collaboration:** 사용자가 하드웨어 특성을 파악하고 AI(Gemini, Claude)가 기술적 해법을 제시하며 완성된 '바이브 코딩'의 결과물입니다.
+
+---
+
+## 🌟 주요 기능 (Key Features)
+- **자동 버튼 감지:** '계속 작업하기' 또는 '다시 시도' 버튼 실시간 감지 (OpenCV 이미지 매칭)
+- **스마트 화면 깨우기:** 모니터 절전 상태에서도 마우스/키보드 입력으로 화면 활성화
+- **듀얼 모니터 지원:** 주/보조 모니터 어디서든 클로드 창 인식 가능
+- **예약 종료 시스템:** 모든 작업 완료 후 설정된 시간에 PC 자동 종료
 
 ---
 
 ## 🪜 설치 방법 (Installation)
 
-### **[1단계] Python 설치**
-1. 제공된 `python-3.14.x-amd64` 설치 파일을 실행합니다.
-2. **🚨 중요:** 설치 창 하단의 **[Add Python to PATH]** 항목을 반드시 체크한 후 설치를 진행하세요. (체크하지 않으면 명령어가 작동하지 않습니다.)
+### **[1단계] Python 설치 / Install Python**
+1. [Python 공식 홈페이지](https://www.python.org/downloads/)에 접속하여 최신 버전을 다운로드합니다.
+2. **🚨 중요(IMPORTANT):** 설치 창 아래쪽의 **[Add Python to PATH]** 체크박스를 반드시 체크하세요!
+   *(Make sure to check "Add Python to PATH" during installation.)*
 
-### **[2단계] 필수 패키지 설치**
-1. `Win + R` 키를 누른 후 `cmd`를 입력하여 실행합니다.
+### **[2단계] 필수 패키지 설치 / Install Packages**
+1. `Win + R` -> `cmd` 입력 후 엔터.
 2. 아래 명령어를 복사하여 붙여넣고 엔터(Enter)를 누릅니다.
+   ```bash
    pip install pyautogui pygetwindow opencv-python pillow
 
 ### **[3단계] 파일 배치**
@@ -76,8 +88,8 @@ This program maximizes work efficiency by detecting Claude's usage limit reset t
 ## 🪜 Installation Guide
 
 ### **[Step 1] Install Python**
-1. Run the provided `python-3.14.x-amd64` installer file.
-2. **🚨 IMPORTANT:** You MUST check the **[Add Python to PATH]** box at the bottom of the installation window before proceeding. (If you miss this step, the program will not work.)
+1. Go to the [official Python website](https://www.python.org/downloads/) and download the latest version.
+2. **🚨 IMPORTANT:** You MUST check the **[Add Python to PATH]** box at the bottom of the installation window!
 
 ### **[Step 2] Install Required Packages**
 1. Press `Win + R` on your keyboard, type `cmd`, and press Enter to open the Command Prompt.
