@@ -1,3 +1,5 @@
+🌐 **Language:** [English](README.md) | [한국어](README.ko.md)
+
 # 🤖 Claude Auto-Resume (Claude_AutoBot)
 
 > **사용 한도가 초과된 Claude 데스크톱 앱을 초기화 시간에 맞춰 자동으로 재개하고, 작업 완료 후 PC를 종료해주는 스마트 자동화 툴입니다.**
