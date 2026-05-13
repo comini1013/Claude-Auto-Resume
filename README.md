@@ -46,7 +46,7 @@ This program maximizes work efficiency by detecting Claude's usage limit reset t
 ## 💡 Important Notes
 
 - **Keep Window Active:** Ensure the Claude app window is not completely covered by other windows or minimized while the program is running.
-- **Button Image Optimization:** If the program fails to recognize the buttons due to different monitor resolutions, capture the buttons directly from your own screen and overwrite the existing files (save them as `btn_continue.png` and `btn_retry.png`). This will significantly improve recognition rates.
+- **🚨Language & Button Customization (Crucial):** The default button images included in the folder are captured from the **Korean version** of Claude. If you are using the English version of Claude (or if your monitor resolution differs), you **must** capture your own "Continue" and "Try Again" buttons directly from your screen and overwrite the existing files (keep the exact names: `btn_continue.png` and `btn_retry.png`).
 - **How to Stop:** If you want to cancel the operation, simply close the black console window or press `Ctrl + C`.
 
 ---
