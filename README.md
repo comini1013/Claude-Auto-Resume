@@ -6,6 +6,11 @@
 
 This program maximizes work efficiency by detecting Claude's usage limit reset time even when you are away. It automatically clicks the "Try Again" or "Continue" button and shuts down the PC at the scheduled time to save energy.
 
+### ⚠️ Please Note
+This program is NOT a sophisticated hacking tool or an API-based coding bot. 
+
+It is a **simple UI automation helper** designed for regular users who collaborate with Claude (Cowork). Its only purpose is to act as a "personal assistant" that clicks the resume button exactly once on your local machine at a pre-set time, helping you bridge the gap during usage limit resets without constant manual checking.
+
 ---
 
 ## 🌟 Key Features
@@ -100,3 +105,9 @@ Many standard screen capture libraries only recognize the **primary monitor**. W
 ### 4. AI–Human Collaboration
 
 This project was completed through close collaboration between **Hyelim Cho** and **AI (Gemini & Claude)**. The human identified the core problems — hardware delays, multi-monitor environments, and real-world edge cases — while the AI proposed and refined the technical solutions. The result is a true product of **"vibe coding"**: iterative, conversational, and human-centered.
+
+---
+## ⚠️ Disclaimer
+This program is an automation tool intended for educational and personal use only.
+1. The user assumes full responsibility for any consequences arising from the use of this program, including but not limited to service restrictions.
+2. This program uses UI automation rather than an official API. Please be aware that it may stop functioning or potentially violate terms of service due to policy changes by the service provider (Anthropic).
