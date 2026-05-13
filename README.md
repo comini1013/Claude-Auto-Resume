@@ -38,18 +38,18 @@
    pip install pyautogui pygetwindow opencv-python pillow
 
 ### **[3단계] 파일 배치**
-1. `Claude_AutoBot` 폴더와 `start` 바로가기 파일을 바탕화면에 둡니다.
-2. 폴더 내부에 `btn_continue.png`와 `btn_retry.png` 이미지가 정상적으로 있는지 확인합니다.
+1. 다운로드한 `Claude_AutoBot` 폴더를 바탕화면에 둡니다.
+2. 폴더 내부에 `claude_auto_resume.py`, `start.bat`, 그리고 이미지 파일들(`btn_continue.png`, `btn_retry.png`)이 모두 함께 있는지 확인합니다.
+3. (선택 사항) 편의를 위해 `start.bat` 파일을 마우스 우클릭하여 **[보내기] -> [바탕화면에 바로가기 만들기]**를 하셔도 좋습니다.
 
 ---
 
 ## ▶️ 사용 방법 (Usage)
 
-1. **리셋 시간 확인:** Claude 앱의 한도 초과 메시지에서 초기화 시각을 확인합니다.
-   - *예:* `resets 6:50pm` -> **1850** 메모
-2. **프로그램 실행:** 바탕화면의 `start.bat`(또는 바로가기)을 더블클릭합니다.
+1. **리셋 시간 확인:** Claude 앱의 한도 초과 메시지에서 초기화 시각을 확인합니다. (예: `resets 6:50pm` -> `1850`)
+2. **프로그램 실행:** `Claude_AutoBot` 폴더 안의 **`start.bat`** 파일을 더블클릭합니다. (바탕화면에 바로가기를 만드셨다면 바로가기를 실행해도 됩니다.)
 3. **시간 입력:** 까만 창에 초기화 시각을 입력합니다. (예: `1850` 또는 `18:50`)
-4. **대기 모드:** 확인 메시지가 뜨면 5초 후 모니터가 꺼지며 대기 상태로 진입합니다. ✅
+4. **대기 모드:** 확인 메시지가 뜨면 5초 뒤 모니터가 꺼지며 대기 상태로 진입합니다. ✅
 
 ---
 
@@ -98,19 +98,18 @@ This program maximizes work efficiency by detecting Claude's usage limit reset t
 3. Once the installation complete message appears, you can close the CMD window.
 
 ### **[Step 3] File Placement**
-1. Place the downloaded `Claude_AutoBot` folder and the `start` shortcut file on your Desktop.
-2. Verify that the `btn_continue.png` and `btn_retry.png` image files are correctly located inside the folder.
+1. Place the downloaded `Claude_AutoBot` folder in your desired location (e.g., Desktop).
+2. Verify that `claude_auto_resume.py`, `start.bat`, and the image files (`btn_continue.png`, `btn_retry.png`) are all located together inside the folder.
+3. (Optional) For convenience, you can right-click the `start.bat` file and select **[Send to] -> [Desktop (create shortcut)]**.
 
 ---
 
 ## ▶️ How to Use
 
-1. **Check Reset Time:** Find the reset time shown in the Claude app's limit exceeded message.
-   - *Example:* `resets 6:50pm` -> Note down **1850**
-2. **Run Program:** Double-click the `start.bat` file (or the Desktop shortcut).
+1. **Check Reset Time:** Find the reset time shown in the Claude app's limit exceeded message. (Example: `resets 6:50pm` -> `1850`)
+2. **Run Program:** Double-click the **`start.bat`** file inside the `Claude_AutoBot` folder. (If you created a desktop shortcut, you can run that instead.)
 3. **Enter Time:** Type the reset time into the black console window and press Enter. (e.g., `1850` or `18:50`)
-4. **Standby Mode:** After the confirmation message appears, leave the PC as is. The monitor will turn off in 5 seconds and enter standby mode. ✅
-
+4. **Standby Mode:** After the confirmation message appears, the monitor will turn off in 5 seconds and enter standby mode. ✅
 ---
 
 ## 💡 Important Notes
