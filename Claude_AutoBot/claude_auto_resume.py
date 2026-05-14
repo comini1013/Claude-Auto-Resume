@@ -24,9 +24,11 @@ EXTRA_MINUTES      = 10
 SHUTDOWN_COUNTDOWN = 60   
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 💡 수정된 부분: 탐색할 이미지 리스트에 btn_retry_2.png를 추가하여 총 3개가 되었습니다.
 BUTTON_IMAGES = [
     os.path.join(BASE_DIR, "btn_continue.png"),
-    os.path.join(BASE_DIR, "btn_retry.png")
+    os.path.join(BASE_DIR, "btn_retry.png"),
+    os.path.join(BASE_DIR, "btn_retry_2.png") 
 ]
 
 def turn_off_monitor():
